@@ -1,0 +1,35 @@
+body {
+    background:url('../img/city_blurred_4.png');background-attachment: fixed;
+}
+
+
+.article_summary h2:hover {
+    background-color: gray;
+
+}
+.article_summary h2 {
+    background: gainsboro;
+    padding-top:5px;
+    /*border-bottom: 1px solid black;*/
+    /*                border-top:none;*/
+    border-radius: 5px;
+}
+.article_summary:hover {
+    background-color: gainsboro;
+
+}
+
+.article_summary {
+    border: 1px solid gainsboro;
+    border-top: none;
+    border-radius: 10px;
+    /*                border-top-left-radius: 0;
+                    border-top-right-radius: 0;*/
+    cursor: pointer;
+
+}
+
+.article_summary p {
+    font-style: italic;
+    padding:10px
+}
