@@ -13,6 +13,7 @@
         <!--append ‘#!watch’ to the browser URL, then refresh the page. -->
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/jquery.custombox.css">
         <link href="css/style.css" rel="stylesheet">
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -30,12 +31,24 @@
 
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.custombox.js"></script>        
         <script type="text/javascript" src="js/scripts.js"></script>
+
+        <script type="text/javascript">
+           $(function () {
+                $('.modal_opener').on('click', function () {
+                    $.fn.custombox(this, {
+                                         url:"#article_blowup"
+                    });
+                    return false;
+                });
+            });
+        </script>
     </head>
 
     <body>
         <div class="container">
-            <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-top: 10px;border-radius:5px">
+            <nav class="navbar navbar-default navbar-static-top navigation" role="navigation" >
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">PROPER.LY</a>    
                 </div>
@@ -231,10 +244,68 @@
             </div>
             <div class="row clearfix" style="margin-top:20px">
                 <div class="col-md-4 column">
-                   <div class="panel panel-default"  style="background-color: whitesmoke">
-                        <div class="panel-heading text-center" style="background-color: gainsboro" >
+                   <div class="panel panel-default article_summary">
+                        <div class="panel-heading text-center article_summary_heading">
                             <!--<h2 class="text-center">-->
-                            <span style='font-size:larger'>Article1</span>
+                            <span>Article1</span>   
+                            <!--</h2>-->
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                        </p>
+                        <p class='text-right'>
+                             <button type="button" class="btn btn-default btn-xs modal_opener" >More >></button>
+
+                        </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 column">
+                    <div class="panel panel-default article_summary" >
+                        <div class="panel-heading text-center article_summary_heading">
+                            <!--<h2 class="text-center">-->
+                            <span>Article1</span>
+                            <!--</h2>-->
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                        </p>
+                        <p class='text-right'>
+                            <button type="button" class="btn btn-default btn-xs">More >></button>
+                        </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 column">
+                    <div class="panel panel-defaul article_summary">
+                        <div class="panel-heading text-center article_summary_heading">
+                            <!--<h2 class="text-center">-->
+                            <span>Article1</span>
+                            <!--</h2>-->
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                        </p>
+                        <p class='text-right'>
+                            <button type="button" class="btn btn-default btn-xs" >More >></button>
+                        </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!--</div>-->
+            </div>
+            <div class="row clearfix" style="margin-top:20px">
+                <div class="col-md-4 column">
+                   <div class="panel panel-default article_summary">
+                        <div class="panel-heading text-center article_summary_heading">
+                            <!--<h2 class="text-center">-->
+                            <span>Article1</span>   
                             <!--</h2>-->
                         </div>
                         <div class="panel-body">
@@ -250,10 +321,10 @@
                     </div>
                 </div>
                 <div class="col-md-4 column">
-                    <div class="panel panel-default" style="background-color: whitesmoke">
-                        <div class="panel-heading text-center" style="background-color: gainsboro" >
+                    <div class="panel panel-default article_summary" >
+                        <div class="panel-heading text-center article_summary_heading">
                             <!--<h2 class="text-center">-->
-                            <span style='font-size:larger'>Article1</span>
+                            <span>Article1</span>
                             <!--</h2>-->
                         </div>
                         <div class="panel-body">
@@ -268,10 +339,10 @@
                     </div>
                 </div>
                 <div class="col-md-4 column">
-                    <div class="panel panel-default" style="background-color: whitesmoke">
-                        <div class="panel-heading text-center" style="background-color: gainsboro" >
+                    <div class="panel panel-defaul article_summary">
+                        <div class="panel-heading text-center article_summary_heading">
                             <!--<h2 class="text-center">-->
-                            <span style='font-size:larger'>Article1</span>
+                            <span>Article1</span>
                             <!--</h2>-->
                         </div>
                         <div class="panel-body">
@@ -304,15 +375,47 @@
             </div>-->
         <div class="row clearfix">
             <div class="col-md-12 column">
-                <div class="text-center footer" >
-                    <div style='position:relative;margin-top:10px;color:white;'>
+                <div class="footer" >
+                    <div class="well-sm text-center">
                         Copyright (c) Proper.ly, All Rights Reserved 2014.
-                </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
         
-
+    </div>
+    <div id="article_blowup">
+        <div class="row clearfix">
+            <div class="col-md-12">
+                <div class="text-center article_blowup_heading">
+                    <h2>Article Header</h2>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-12">
+                 <div  class="article_detail_content">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    </p>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                    </p>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    </p>
+                    
+                 </div>
+            </div>
+        </div>
+    </div>    
+        
     </body>
 </html>
