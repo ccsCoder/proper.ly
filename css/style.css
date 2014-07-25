@@ -33,3 +33,35 @@ body {
     font-style: italic;
     padding:10px
 }
+
+.footer {
+    opacity:0.5;
+    background-color:black;
+    border-radius:5px;
+}
+
+.dash_item {
+    cursor: pointer;
+    transition: all 0.50s ease-in-out;
+    -webkit-transition: all 0.50s ease-in-out;
+    -moz-transition: all 0.50s ease-in-out;
+    box-shadow: 5px 5px 10px darkgray;
+    -webkit-box-shadow: 5px 5px 10px darkgray;
+    -moz-box-shadow: 5px 5px 10px darkgray;
+}
+
+.dash_item:hover {
+    box-shadow: 10px 10px 15px darkgray;
+    -webkit-box-shadow: 10px 10px 15px darkgray; 
+    -moz-box-shadow: 10px 10px 15px darkgray;
+}
+
+.carouse_shadow {
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    box-shadow: 5px 10px 15px rgb(85, 81, 81);
+    -webkit-box-shadow: 5px 10px 15px rgb(85, 81, 81);
+    -moz-box-shadow: 5px 10px 15px rgb(85, 81, 81);
+}
+
